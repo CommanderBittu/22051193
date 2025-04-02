@@ -8,26 +8,22 @@ const NavItem = ({ icon: Icon, children, to }) => {
 
   return (
     <NavLink
-      to={to}
-      style={{
-        padding: '10px 15px',
-        borderRadius: '5px',
-        fontWeight: '500',
-        backgroundColor: isActive ? '#3182ce' : 'transparent',
-        color: isActive ? '#fff' : '#4a5568',
-        textDecoration: 'none',
-        display: 'flex',
-        alignItems: 'center',
-        transition: 'all 0.3s',
-      }}
-      activeStyle={{
-        backgroundColor: '#2b6cb0',
-        color: '#fff',
-      }}
-    >
-      <Icon style={{ marginRight: '8px' }} />
-      {children}
-    </NavLink>
+  to={to}
+  style={({ isActive }) => ({
+    padding: '10px 15px',
+    borderRadius: '5px',
+    fontWeight: '500',
+    backgroundColor: isActive ? '#3182ce' : 'transparent',
+    color: isActive ? '#fff' : '#4a5568',
+    textDecoration: 'none',
+    display: 'flex',
+    alignItems: 'center',
+    transition: 'all 0.3s',
+  })}
+>
+  <Icon style={{ marginRight: '8px' }} />
+  {children}
+</NavLink>
   );
 };
 
