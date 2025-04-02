@@ -26,6 +26,7 @@ Styling: Inline styles with CSS-in-JS
 Usage
 
 Click on Feed to see recent posts.
+![Screenshot 2025-04-02 212447](https://github.com/user-attachments/assets/283f14bc-01b6-4e69-a4b1-000a305c1dc2)
 
 Navigate to Top Users for leaderboards.
 
